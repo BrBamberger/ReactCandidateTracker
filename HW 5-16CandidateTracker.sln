@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTracker.Web", "CandidateTracker.Web\CandidateTracker.Web.csproj", "{CEC496AC-AD29-4669-9C13-31A2DE85E81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTracker.Data", "CandidateTracker.Data\CandidateTracker.Data.csproj", "{DC6CFE92-F18A-455C-BC90-4B61E4111DE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEC496AC-AD29-4669-9C13-31A2DE85E81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC496AC-AD29-4669-9C13-31A2DE85E81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC496AC-AD29-4669-9C13-31A2DE85E81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC496AC-AD29-4669-9C13-31A2DE85E81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6CFE92-F18A-455C-BC90-4B61E4111DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6CFE92-F18A-455C-BC90-4B61E4111DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6CFE92-F18A-455C-BC90-4B61E4111DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6CFE92-F18A-455C-BC90-4B61E4111DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21D98B99-9AB2-4F96-9837-F85D72922868}
+	EndGlobalSection
+EndGlobal
