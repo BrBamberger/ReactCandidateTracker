@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CandidateTracker.Data
 {
-    public class CandidateDataContext :DbContext
+    public class CandidateDataContext : DbContext
     {
         private string _connectionString;
 

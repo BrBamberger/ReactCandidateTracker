@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
-import { FetchData } from './components/FetchData';
-import { Counter } from './components/Counter';
+import { Route } from 'react-router-dom';
+import { Home } from './Home';
+import { Layout } from './Layout';
+import { AddCandidate } from './Pages/AddCandidate';
+import { Pending } from './Pages/Pending';
+import { Confirmed } from './Pages/Confirmed';
+import { Refused } from './Pages/Refused';
+
+import { CandidatesContextComponent } from './CandidateContext';
 
 import './custom.css'
 
@@ -11,12 +15,17 @@ export default class App extends Component {
   static displayName = App.name;
 
   render () {
-    return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/counter' component={Counter} />
-        <Route path='/fetch-data' component={FetchData} />
-      </Layout>
+      return (
+        <CandidatesContextComponent>
+         <Layout>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/addcandidate' component={AddCandidate} />
+                <Route exact path='/pending' component={Pending} />
+                <Route exact path='/confirmed' component={Confirmed} />
+                <Route exact path='/refused' component={Refused} />
+                <Route exact path='/details/:id' component={Details}/>
+           </Layout>
+       </CandidatesContextComponent>
     );
   }
 }
